@@ -1,0 +1,215 @@
+/* Tổng quát */
+.containerdonhang {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các cột */
+}
+
+.info-container,
+.donhang-container {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.info-container {
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+/* Khung thông tin khách hàng */
+.khachhang-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+}
+
+.khachhang-container h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Căn chỉnh input và label */
+.khachhang-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các input */
+}
+
+.khachhang-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Nút Lưu */
+.khachhang-container input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.khachhang-container input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive chỉnh sửa */
+@media (min-width: 600px) {
+    .khachhang-container {
+        max-width: 600px;
+    }
+}
+
+/* Khung trạng thái đơn hàng */
+.trangthai-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các nút */
+    margin-top: 20px;
+}
+
+.trangthai-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Màu sắc và hiệu ứng hover */
+.trangthai-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive: Hiển thị nút theo hàng ngang trên màn hình lớn */
+@media (min-width: 600px) {
+    .trangthai-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .trangthai-container button {
+        flex: 1; /* Chia đều chiều rộng cho các nút */
+    }
+}
+
+
+/* Khung tổng thể của đơn hàng */
+.donhang-container {
+    background-color: #fff;
+    max-height: 650px;
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-y: scroll;
+}
+
+/* Khung hiển thị đơn hàng */
+.dh-container {
+    width: 90%;
+    margin: auto;
+}
+h1 {
+    text-align: center; /* Căn giữa nội dung */
+    font-size: 2rem; /* Đặt kích thước chữ */
+    color: red; /* Màu chữ */
+    margin: 20px 0; /* Khoảng cách trên và dưới */
+    padding: 10px; /* Khoảng cách bên trong */
+    font-weight: bold; /* Làm đậm chữ */
+    font-family: 'Arial', sans-serif; /* Đặt font chữ */
+    text-transform: uppercase; /* Biến tất cả chữ thành chữ hoa */
+}
+
+/* Khung chứa từng đơn hàng */
+.tinhtrangdh {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Thông tin cơ bản của đơn hàng (madh và ngay) */
+.order-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Từng sản phẩm */
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hình ảnh sản phẩm */
+.product-item .image img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Thông tin chi tiết sản phẩm */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1; /* Cho phép phần chi tiết mở rộng để chiếm hết không gian còn lại */
+}
+
+.product-details .tensach {
+    font-weight: bold;
+    font-size: 1.2em; /* Tăng kích thước để tương xứng với hình ảnh */
+    color: #333;
+}
+
+.product-details .slxuat {
+    font-size: 1em; /* Tăng kích thước để dễ đọc hơn */
+    color: #666;
+}
+
+
+/* Tóm tắt đơn hàng */
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}

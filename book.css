@@ -1,0 +1,199 @@
+.book-details {
+    display: flex; /* Sử dụng flexbox để định dạng các phần tử */
+    max-width: 800px; /* Giới hạn chiều rộng tối đa */
+    margin: 20px auto; /* Giữa trang */
+}
+
+.book-image {
+    flex: 1; /* Hình ảnh sẽ chiếm 1 phần của không gian */
+    padding-right: 20px; /* Khoảng cách giữa hình ảnh và thông tin sách */
+}
+
+.book-image img {
+    width: 100%; /* Chiều rộng hình ảnh 100% */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+}
+
+.book-info {
+    flex: 2; /* Thông tin sách sẽ chiếm 2 phần của không gian */
+}
+
+.book-info h1 {
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và các đoạn văn */
+}
+
+.book-info p {
+    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+}
+.button-group {
+    margin-top: 20px; /* Khoảng cách giữa thông tin và các nút */
+}
+
+.btn {
+    background-color: #007BFF; /* Màu nền cho nút */
+    color: white; /* Màu chữ */
+    border: none; /* Không có viền */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+/* Container chính cho các đánh giá */
+#reviews-container {
+    width: 70%;                   /* Chiều rộng 70% */
+    max-height: 500px;            /* Chiều cao tối đa 500px */
+    overflow-y: auto;             /* Thanh cuộn dọc */
+    margin: 20px auto;            /* Canh giữa phần đánh giá */
+    padding: 20px;
+    background-color: #f7f9fc;    /* Màu nền nhạt */
+    border: 1px solid #ddd;       /* Đường viền nhạt */
+    border-radius: 8px;           /* Bo góc */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+}
+
+/* Mỗi mục đánh giá */
+.review {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;        /* Nền trắng cho từng đánh giá */
+    border: 1px solid #e0e0e0;     /* Đường viền nhạt */
+    border-radius: 6px;            /* Bo góc cho mỗi đánh giá */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Hiệu ứng bóng nhẹ */
+}
+
+/* Phần đánh giá */
+.review p {
+    margin: 8px 0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* CSS cho phần hiển thị ngày, mã khách hàng và điểm đánh giá */
+.review-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.review-info .date, .review-info .customer-id, .review-info .rating {
+    margin-right: 12px;
+}
+
+.review-info .date {
+    font-weight: bold;
+    color: #333;
+}
+
+.review-info .customer-id {
+    color: #0073e6; /* Màu xanh nhạt cho mã khách hàng */
+}
+
+.review-info .rating {
+    color: #ff9800; /* Màu vàng cam cho điểm đánh giá */
+    font-weight: bold;
+}
+
+/* Khi phần đánh giá có nhiều sao */
+.star-rating .star {
+    font-size: 1.5em;              /* Cỡ lớn */
+    color: #ccc;                   /* Màu xám cho sao chưa chọn */
+    cursor: pointer;
+}
+
+.star-rating .star.gold {
+    color: #ff9800;                /* Sao vàng khi được chọn */
+}
+/* Container cho phần lọc sao */
+.filter-container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+    margin: 20px 0;          /* Khoảng cách trên dưới */
+}
+
+/* Cách đều nhãn và hộp chọn */
+.filter-container label {
+    margin-right: 8px;
+}
+
+/* Tùy chỉnh độ rộng của select box */
+.filter-container select {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.discount-info {
+    display: inline; /* Hiển thị nằm ngang */
+    padding: 5px 15px;
+    background-color: red; /* Màu nền đỏ */
+    color: gold; /* Màu chữ vàng lấp lánh */
+    font-weight: bold;
+    border-radius: 50%; /* Border hình tròn */
+    font-size: 16px; /* Cỡ chữ */
+    text-align: center;
+    box-shadow: 0 0 10px gold; /* Thêm hiệu ứng lấp lánh vàng */
+}
+
+/* CSS cho input số lượng */
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Định dạng textarea */
+textarea#review-content {
+    width: 100%; /* Chiều rộng đầy đủ của phần tử chứa */
+    padding: 10px; /* Khoảng cách giữa viền và nội dung */
+    font-size: 16px; /* Cỡ chữ */
+    border: 1px solid #ccc; /* Viền mỏng màu xám */
+    border-radius: 5px; /* Bo góc */
+    resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+    min-height: 200px; /* Đảm bảo chiều cao tối thiểu của textarea */
+    margin-bottom: 15px; /* Khoảng cách dưới textarea */
+    outline: none; /* Loại bỏ viền khi focus */
+}
+
+/* Thêm hiệu ứng hover và focus cho textarea */
+textarea#review-content:focus {
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Hiệu ứng đổ bóng */
+}
+
+/* Định dạng nút Gửi đánh giá */
+button.btn-review {
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    background-color: #4CAF50; /* Màu nền xanh lá */
+    color: white; /* Màu chữ trắng */
+    font-size: 16px; /* Cỡ chữ */
+    border: none; /* Loại bỏ viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Hiệu ứng chuyển màu nền và zoom */
+    width: 30%; /* Nút chiếm 100% chiều rộng */
+    float: right;
+}
+
+/* Thêm hiệu ứng hover và active cho nút */
+button.btn-review:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+    transform: scale(1.05); /* Tăng kích thước nút một chút khi hover */
+}
+
+/* Hiệu ứng khi nút bị click */
+button.btn-reivew:active {
+    transform: scale(0.98); /* Thu nhỏ nút khi click */
+}

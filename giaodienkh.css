@@ -1,0 +1,252 @@
+/* Giảm kích thước các nút */
+.delete-button,
+.select-button,
+.save-button {
+    margin-top: 15px;
+    width: 100%; /* Đảm bảo các button có chiều rộng bằng nhau */
+    padding: 8px; /* Giảm padding để nút nhỏ lại */
+    font-size: 14px; /* Giảm kích thước chữ */
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px; /* Bo góc */
+    transition: background-color 0.3s; /* Thêm hiệu ứng cho nút */
+}
+
+/* Các button có màu sắc khác nhau */
+.delete-button {
+    background-color: #ff4444; /* Màu đỏ */
+    color: white;
+    border: none;
+}
+
+.select-button {
+    background-color: #ffcc00; /* Màu vàng */
+    color: black;
+    border: none;
+}
+
+.save-button {
+    background-color: #4CAF50; /* Màu xanh */
+    color: white;
+    border: none;
+}
+
+/* Hiệu ứng hover cho button */
+.delete-button:hover,
+.select-button:hover,
+.save-button:hover {
+    opacity: 0.8; /* Làm mờ khi hover */
+}
+
+/* Căn chỉnh khoảng cách giữa các phần tử sản phẩm */
+.product_cart {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Thêm khoảng cách giữa các quyển sách */
+    margin-bottom: 20px; /* Khoảng cách dưới mỗi sản phẩm */
+}
+
+/* Điều chỉnh chiều rộng cho các nút và các thông tin sản phẩm */
+.product_cart .product-detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các phần tử trong thông tin sản phẩm */
+}
+
+.product_cart div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Giảm khoảng cách giữa các button */
+    align-items: flex-start;
+    width: 120px; /* Kích thước chiều rộng của cột chứa các nút */
+    margin-top: 10px;
+}
+
+/* Cải thiện khoảng cách giữa các sản phẩm */
+.gio-hang-trong {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Khoảng cách giữa các sản phẩm */
+}
+
+/* Định dạng các mục trong giỏ hàng */
+.product_cart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Định dạng của các mục khuyến mãi */
+.delete-button {
+    background-color: aqua; /* Màu nền cho nút xóa */
+    color: white; /* Màu chữ */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.select-button {
+    background-color: red; /* Màu nền cho nút chọn */
+    color: black;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Khi nút được chọn */
+.select-button.selected {
+    background-color: green;
+    color: white;
+}
+
+/* Hiển thị giỏ hàng trong chế độ mở */
+.advanced-search.open {
+    display: block;
+}
+
+/* Định dạng các ngôi sao trong đánh giá */
+.star {
+    font-size: 20px;
+    color: #f39c12;
+    padding-right: 2px;
+}
+
+.star.empty {
+    color: #ccc;
+}
+
+.star.half {
+    color: #f39c12;
+}
+
+.no-rating {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Định dạng khu vực đánh giá sản phẩm */
+#rating-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Định dạng khu vực đánh giá sao */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.star {
+    padding: 2%;
+    font-size: 30px;
+    color: yellow;
+    cursor: pointer;
+}
+
+/* Định dạng phần input của số lượng */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Định dạng nút lưu */
+.save-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Hiệu ứng hover cho nút lưu */
+.save-button:hover {
+    background-color: #45a049;
+}
+
+/* Định dạng ảnh sản phẩm */
+.product {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.ptkm {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 15px;
+    background-color: red;
+    color: gold;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 0 10px gold;
+    z-index: 10;
+}
+
+.ptkm:hover {
+    text-shadow: 0 0 15px gold, 0 0 30px gold;
+}
+
+/* Định dạng giá cũ */
+.old-price {
+    text-decoration: line-through;
+    color: #ff0000 !important;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Container chứa các mục khuyến mãi */
+.khuyenmai-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 1600px;
+}
+
+/* Định dạng từng mục khuyến mãi */
+.khuyenmai-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Điều chỉnh chiều rộng cho các mục khi màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .khuyenmai-item {
+        width: 100%;
+    }
+}

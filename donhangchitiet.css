@@ -1,0 +1,93 @@
+/* CSS cho trang đơn hàng */
+.insights {
+    width: 80%; /* Chiều rộng của phần nội dung */
+    margin: 0 auto; /* Căn giữa */
+    padding: 20px;
+    background: var(--color-light);
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    position: relative;
+}
+.insights .left-btn {
+    position: absolute;
+    left: 0; /* Căn sát bên trái */
+    transform: translateY(-50%); /* Căn giữa theo trục dọc */
+    padding: 10px 15px;
+    background-color: #007bff; /* Màu nền */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.insights .right-btn {
+    position: absolute;
+    right: 0; /* Căn sát bên phải */
+    transform: translateY(-50%); /* Căn giữa theo trục dọc */
+    padding: 10px 15px;
+    background-color: #28a745; /* Màu nền khác */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.insights a:hover {
+    opacity: 0.8; /* Hiệu ứng khi hover */
+}
+.h1madh {
+    text-align: center; /* Căn giữa tiêu đề */
+    color: var(--color-dark);
+}
+
+.order-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Khoảng cách giữa các thẻ span */
+    margin: 20px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.order-info span {
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    margin-top: 20px; /* Khoảng cách giữa thông tin và bảng */
+    overflow-y: auto; /* Cuộn ngang nếu bảng quá dài */
+}
+
+table {
+    width: 100%; /* Chiều rộng bảng */
+    border-collapse: collapse; /* Hợp nhất các biên */
+}
+
+th, td {
+    padding: 10px; /* Khoảng cách trong các ô */
+    text-align: left; /* Căn trái nội dung */
+    border-bottom: 1px solid #ddd; /* Biên dưới các ô */
+}
+
+th {
+    background-color: #4CAF50; /* Màu nền của tiêu đề */
+    color: white; /* Màu chữ tiêu đề */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Màu nền khi di chuột qua hàng */
+}
+
+.a1 {
+    color: #007BFF; /* Màu chữ cho các liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.a1:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
+}
+
+.bi-trash {
+    color: red; /* Màu của biểu tượng xóa */
+}

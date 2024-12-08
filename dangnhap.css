@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    width: 60%;  /* 3/5 chiều rộng */
+    height: 100%;
+    background-image: url("anh/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;  /* 2/5 chiều rộng */
+    height: 100%;
+    background: linear-gradient(to bottom, #003366, #66cc66 80%, #006400); /* Màu nền gradient */
+}
+
+.auth {
+    background-color: #dff0d8;  /* Màu xanh lá nhạt */
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 90%;  /* Đảm bảo form chiếm toàn bộ không gian có sẵn */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.auth__header {
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth__header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 550;
+    color: #696969;
+}
+
+.switch-btn {
+    color: var(--primary-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.auth__form {
+    padding: 20px 40px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.form-control input {
+    border: 2px solid #818080;
+    border-radius: 10px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+    outline-color: #e4be4b;
+}
+
+.form-control.valid input {
+    border-color: #61d44c;
+    outline-color: #61d44c;
+}
+
+.form-control.invalid input {
+    border-color: #e74c3c;
+    outline-color: #e74c3c;
+}
+
+.form-control.invalid small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.auth_btn {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.auth_btn:hover {
+    background-color: #e4be4b;
+}
+
+.auth:nth-child(2) {
+    display: none;
+}
+
+a {
+    color: #0066cc; /* Màu xanh lam cho liên kết */
+    text-decoration: none; /* Xóa gạch chân */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    display: inline-block; /* Đảm bảo liên kết hiển thị như một phần tử khối */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+    float: right; /* Đặt liên kết ở bên phải */
+}
+
+a:hover {
+    color: #ff6600; /* Màu cam khi hover */
+    text-decoration: underline; /* Thêm gạch chân khi hover */
+}
